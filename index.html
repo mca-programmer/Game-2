@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guess the Word Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔤 শব্দ অনুমান করো</h1>
+
+  <div id="game">
+    <p id="hintText">🖼️ হিন্ট:</p>
+    <img id="hintImage" src="" alt="Hint Image" />
+    <p id="wordDisplay">_ _ _ _</p>
+
+    <input type="text" id="guessInput" placeholder="অক্ষর টাইপ করো..." maxlength="1" autofocus />
+
+    <div>
+      ⏳ সময়: <span id="timer">10</span> সেকেন্ড
+    </div>
+    <div>
+      🏆 স্কোর: <span id="score">0</span> | High Score: <span id="highScore">0</span>
+    </div>
+
+    <div>
+      <label for="level">লেভেল:</label>
+      <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <button id="speakBtn">🔊 উচ্চারণ শুনো</button>
+    <button id="restartBtn">🔁 আবার শুরু</button>
+    <button id="exitBtn">❌ গেম বন্ধ করো</button>
+
+  </div>
+
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: linear-gradient( 135deg, #FDD819 10%, #E80505 100%);
+  padding: 20px;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.correct {
+  animation: correctFlash 0.5s ease;
+  background-image: linear-gradient( 135deg, #13ee4a 10%, #B210FF 100%);
+}
+
+.wrong {
+  animation: wrongFlash 0.5s ease;
+ background-image: linear-gradient( 105.9deg,  rgba(0,122,184,1) 24.4%, rgba(46,0,184,0.88) 80.5% );
+}
+
+@keyframes correctFlash {
+  from { background-image: radial-gradient( circle 450px at 48.5% 41.5%,  rgba(226,153,43,1) 0%, rgba(243,68,22,1) 90% );}
+  to { background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% );}
+}
+
+@keyframes wrongFlash {
+  from { background-image: linear-gradient( 109.6deg,  rgba(255,179,189,1) 1.8%, rgba(254,248,154,1) 50.6%, rgba(161,224,186,1) 100.3% ); }
+  to { background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(214,40,40,1) 0%, rgba(255,195,0,1) 90% ); }
+}
+
+#exitBtn {
+  background-image: linear-gradient( 135deg, #90F7EC 10%, #32CCBC 100%);
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
